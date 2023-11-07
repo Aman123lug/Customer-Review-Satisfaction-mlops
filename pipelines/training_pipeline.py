@@ -1,11 +1,10 @@
-import logging
+
 import zenml
 from zenml import pipeline
 from steps.data_ingestion import ingest_df
 from steps.data_preprocessing import clean_data
 from steps.model_trainer import model_training
 from steps.evaluation import model_evaluation
-
 
 @pipeline
 def train_pipelines(dataPath: str):
